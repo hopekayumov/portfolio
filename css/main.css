@@ -64,6 +64,7 @@ body {
     width: 100%;
     background-color: #fff;
     box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+    z-index: 1;
 }
 
 .main-header__brand {
@@ -293,4 +294,61 @@ body {
 
 .client-item__rate {
     color: #FFD805;
+}
+/* PORTFOLIO SECTION STYLES */
+.portfolio {
+    padding: 100px 0; 
+}
+.portfolio-item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.portfolio-item__image {
+    width: 100%;
+}
+.portfolio-items {
+    margin-top: 50px;
+    position: relative;
+}
+.portfolio-item__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(19, 69, 230, 0.9);
+    visibility: hidden;
+}
+.portfolio-item__info {
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    color: #fff;
+    visibility: hidden;
+}
+.portfolio-item__info a {
+    color: #fff;
+    text-decoration: none;
+}
+.portfolio-item:hover .portfolio-item__overlay {
+    visibility: visible;
+    top: 20px;
+    left: 20px;
+}
+.portfolio-item:hover .portfolio-item__info {
+    visibility: visible;
+}
+
+.portfolio-item-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.portfolio-item-3 {
+    position: absolute;
+    top: 380px;
+    right: 0;
 }
